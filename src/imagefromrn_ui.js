@@ -1,16 +1,14 @@
-import Plugin 				from '@ckeditor/ckeditor5-core/src/plugin';
-import ButtonView 			from '@ckeditor/ckeditor5-ui/src/button/buttonview';
-import { toWidget, toWidgetEditable } 				from '@ckeditor/ckeditor5-widget/src/utils';
-import {CustomElemCommand}  from './customelem_command';
-import defaultIcon 			from '../theme/icons/default.svg';
+import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
+import ButtonView from '@ckeditor/ckeditor5-ui/src/button/buttonview';
+import { toWidget, toWidgetEditable } from '@ckeditor/ckeditor5-widget/src/utils';
+import { ImageFromRNCommand }  from './imagefromrn_command';
+import defaultIcon from '../theme/icons/default.svg';
 
 
-export default class CustomElemUI extends Plugin {
-
-
+export default class ImageFromRNUI extends Plugin {
 	init() {
 		const editor 		= this.editor;
-		const items      	= editor.config.get(( 'CustomElement.items' ))
+		const items      	= editor.config.get(( 'ImageFromRNUI.items' ))
 
 		
 		for (let i=0; i<items.length; i++){
@@ -94,8 +92,8 @@ export default class CustomElemUI extends Plugin {
 			
 
 			//---command
-			const com =  'custom-element-'+tag;
-			editor.commands.add( com, new CustomElemCommand( editor, tag, text, inline, attr  ) );
+			const com =  'imagefromrn-'+tag;
+			editor.commands.add( com, new ImageFromRNCommand( editor, tag, text, inline, attr  ) );
 
 			//---toolbar
 			this._createToolbarButton(com, icon);

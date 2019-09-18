@@ -1,16 +1,16 @@
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
-import CustomElemUI from './customelem_ui';
+import ImageFromRNUI from './imagefromrn_ui';
 
 
 export default class CustomElement extends Plugin {
 
 	static get requires() {
-		return [ CustomElemUI ];
+		return [ ImageFromRNUI ];
 	}
 
 
 	static get pluginName() {
-		return 'CustomElement';
+		return 'ImageFromRN';
 	}
 
 

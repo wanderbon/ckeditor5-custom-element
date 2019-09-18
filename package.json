@@ -1,8 +1,8 @@
 {
-  "name": "ckeditor5-custom-element",
+  "name": "ckeditor5-imagefromrn",
   "version": "2.1.2",
   "description": "Insert custom elements (html tags) in ckeditor5",
-  "main": "src/customelement.js",
+  "main": "src/imagefromrn.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,8 +21,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/centaur54dev/ckeditor5-custom-element"
+    "url": "git+https://github.com/wanderbon/ckeditor5-custom-element.git"
   },
-  "author": "centaur54dev",
+  "author": "wanderbon",
   "license": "MIT"
 }

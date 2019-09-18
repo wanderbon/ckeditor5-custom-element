@@ -1,9 +1,9 @@
-import Command 				from '@ckeditor/ckeditor5-core/src/command';
+import Command from '@ckeditor/ckeditor5-core/src/command';
 //import { findOptimalInsertionPosition} from '@ckeditor/ckeditor5-widget/src/utils';
 
 
 
-export class CustomElemCommand extends Command {
+export class ImageFromRNCommand extends Command {
 
     constructor( editor, tagName, placeholder, inline, attributes ) {
         super( editor );
